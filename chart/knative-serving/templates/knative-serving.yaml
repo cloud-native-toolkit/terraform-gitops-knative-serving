@@ -1,0 +1,10 @@
+apiVersion: operator.knative.dev/v1alpha1
+kind: KnativeServing
+metadata:
+  name: {{ .Values.name }}
+  namespace: {{ .Values.namespace }}
+  labels:
+    {{- include "knative-serving.labels" . | nindent 4 }}
+spec:
+    high-availability:
+        replicas: {{ .Values.replicaCount }}
