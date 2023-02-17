@@ -79,3 +79,16 @@ variable "server_name" {
   description = "The name of the server"
   default     = "default"
 }
+
+
+variable "replica_count" {
+  type        = number
+  description = "The number of replcas for the Knative Serving instance"
+  default     = 2
+}
+
+variable "instance_name" {
+  type        = string
+  description = "The name of the Knative Serving instance"
+  default     = "knative-serving"
+}
