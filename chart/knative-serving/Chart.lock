@@ -1,0 +1,6 @@
+dependencies:
+- name: knative-serving
+  repository: https://charts.cloudnativetoolkit.dev/
+  version: 1.0.0
+digest: sha256:af535a09d768e768f13b6b102378228a0f4530803c566158da3035ba06ace93b
+generated: "2023-03-03T10:45:07.147012-05:00"

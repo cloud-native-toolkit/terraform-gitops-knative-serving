@@ -3,8 +3,10 @@ locals {
   yaml_dir      = "${path.cwd}/.tmp/${local.name}/chart/${local.name}"
   service_url   = "http://${local.name}.${var.namespace}"
   values_content = {
-    replicaCount = var.replica_count
-    name = var.instance_name
+    knative-serving = {      
+      replicaCount = var.replica_count
+      name = var.instance_name
+    }
   }
   layer = "services"
   type  = "base"
