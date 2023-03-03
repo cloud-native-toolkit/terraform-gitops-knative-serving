@@ -5,6 +5,7 @@ Automation to create a Knative Serving instance using GitOps
 ## Software dependencies
 
 The module depends on the following software components:
+- https://github.com/cloud-native-toolkit/terraform-gitops-serverless-operator
 
 ### Command-line tools
 
